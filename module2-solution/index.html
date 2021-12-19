@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <title>Module 2 Assignment Solution</title>
 <!-- <link rel="stylesheet" href="style.css"> -->
-<!-- Status: I started from scratch with a methodical approach to build all the boxes and text first, 
-separating out the hard part with the width, float, rows, relative and absolute positioning, and offsets. -->
+
+<!-- **Status:** I started from scratch with a methodical approach to build all the boxes and text first, 
+isolating the hard part with the width, float, rows, relative and absolute positioning, and offsets. -->
+
 <style>
 /********** Base styles **********/
 * {box-sizing: border-box;}
@@ -20,7 +22,7 @@ separating out the hard part with the width, float, rows, relative and absolute 
     color: #800000;
 }
 
-#textbox1 {
+#textbox1, #textbox2, #textbox3 {
 	background-color: #CBFAF8;
 	border: 1px solid black;
 	padding: 10px;
@@ -28,56 +30,28 @@ separating out the hard part with the width, float, rows, relative and absolute 
     color: #800000;
 }
 
-#textbox2 {
-	background-color: #CBFAF8;
-	border: 1px solid black;
-	padding: 10px;
-	font-family: "Times New Roman", Times, serif;
-    color: #800000;
-}
-
-#textbox3 {
-	background-color: #CBFAF8;
-	border: 1px solid black;
-	padding: 10px;
-	font-family: "Times New Roman", Times, serif;
-    color: #800000;
+#chickenbox, #beefbox, #sushibox {
+    border: 1px solid black;
+	padding: 7px;
+	width: 130px;
+    height: 35px;
+    text-align: center;
+    vertical-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 125%;
+    color: DarkCyan;
 }
 
 #chickenbox {
 	background-color: #F7D5B6;
-	border: 1px solid black;
-	padding: 10px;
-	width: 120px;
-    height: 40px;
-    text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 125%;
-    color: DarkCyan;
 }
 
 #beefbox {
 	background-color: #F8D8D6;
-	border: 1px solid black;
-	padding: 10px;
-	width: 120px;
-    height: 40px;
-    text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 125%;
-    color: DarkCyan;
 }
 
 #sushibox {
 	background-color: #D0F5C1;
-	border: 1px solid black;
-	padding: 10px;
-	width: 120px;
-    height: 40px;
-    text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 125%;
-    color: DarkCyan;
 }
 
 /********** Large devices only **********/
@@ -101,6 +75,7 @@ separating out the hard part with the width, float, rows, relative and absolute 
 <h1 id="maintitle">Our Menu</h1>
 <div>
   <div>
+  	  
 	  <p id="textbox1"><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	  <p id="chickenbox">Chicken</p>
   </div>
