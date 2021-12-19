@@ -4,337 +4,113 @@
 <meta charset="utf-8">
 <title>Module 2 Assignment Solution</title>
 <!-- <link rel="stylesheet" href="style.css"> -->
+
 <style>
 /********** Base styles **********/
 * {box-sizing: border-box;}
 
-/* body {
-  margin: 0;
-  padding: 0;
-} */
-
-h1 {
-  margin: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 175%;
-  color: maroon;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
+#maintitle {
+	background-color: transparent;
+	border: 1px dashed gray;
+	padding: 10px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 175%;
+    color: #800000;
 }
 
-p {
-  float: left;
-  margin-right: 10px;
-  clear: left;
+#textbox1 {
+	background-color: #CBFAF8;
+	border: 1px solid black;
+	padding: 10px;
+	font-family: "Times New Roman", Times, serif;
+    color: #800000;
 }
 
-/* Lorem Ipssum Text Boxes */
-
-#p41 {
-  background-color: #CBFAF8;
-  font-family: "Times New Roman", Times, serif;
-  color: #800000;
-  border: 1px solid black;
-  margin: 10px;
-  padding: 10px;
-  overflow: auto;
-  position: relative;
-}
-#p42 {
-  background-color: #CBFAF8;
-  font-family: "Times New Roman", Times, serif;
-  color: #800000;
-  border: 1px solid black;
-  margin: 10px;
-  padding: 10px;
-  overflow: auto;
-  position: relative;
-}
-#p43 {
-  background-color: #CBFAF8;
-  font-family: "Times New Roman", Times, serif;
-  color: #800000;
-  border: 1px solid black;
-  margin: 10px;
-  padding: 10px;
-  overflow: auto;
-  position: relative;
+#textbox2 {
+	background-color: #CBFAF8;
+	border: 1px solid black;
+	padding: 10px;
+	font-family: "Times New Roman", Times, serif;
+    color: #800000;
 }
 
-/* Subheading Text Boxes: Chicken, Beef, Sushi */
+#textbox3 {
+	background-color: #CBFAF8;
+	border: 1px solid black;
+	padding: 10px;
+	font-family: "Times New Roman", Times, serif;
+    color: #800000;
+}
 
-  p.p1 {
-    border: 1px solid black;
-    width: 100px;
-    height: 30px;
-    margin: 20px;
+#chickenbox {
+	background-color: #F7D5B6;
+	border: 1px solid black;
+	padding: 10px;
+	width: 120px;
+    height: 40px;
     text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 125%;
     color: DarkCyan;
-    background-color: #F7D5B6;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 125%;
-    /* float: none; */
-    position: absolute
-  }
-  p.p2 {
-    border: 1px solid black;
-    width: 100px;
-    height: 30px;
-    margin: 20px;
-    text-align: center;
-    color: DarkCyan;
-    background-color: #F8D8D6;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 125%;
-    /* float: none; */
-    position: absolute;
-  }
-  p.p3 {
-    border: 1px solid black;
-    width: 100px;
-    height: 30px;
-    margin: 20px;
-    text-align: center;
-    color: DarkCyan;
-    background-color: #D0F5C1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 125%;
-    /* float: none; */
-    position: absolute;
-  }
+}
 
-  section {
-    position: relative;
-  }
-  
+#beefbox {
+	background-color: #F8D8D6;
+	border: 1px solid black;
+	padding: 10px;
+	width: 120px;
+    height: 40px;
+    text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 125%;
+    color: DarkCyan;
+}
 
-/* Simple Responsive Framework 
-.row {
-  width: 100%;
-} */
+#sushibox {
+	background-color: #D0F5C1;
+	border: 1px solid black;
+	padding: 10px;
+	width: 120px;
+    height: 40px;
+    text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 125%;
+    color: DarkCyan;
+}
 
 /********** Large devices only **********/
 @media (min-width: 992px)
+{}
 
- h1 {
-  width: 90%;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
- }
 
-  #p41 {
-    width: 33.33%;
-    margin: 20px;
-    padding: 10px;
-  }
-
-  #p42 {
-    width: 33.33%;
-    margin: 20px;
-    padding: 10px;
-  }
-
-  #p43 {
-    width: 33.33%;
-    margin: 20px;
-    padding: 10px;
-  }
-
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 
-  
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
-
-/********** Medium devices only **********
+/********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px)
 
- h1 {
-  text-align: center;
-  width: 60%;
- }
+{}
 
- #p41 {
-    width: 50%;
-    margin: 20px;
-    padding: 10px;
-  }
-
-  #p42 {
-    width: 50%;
-    margin: 20px;
-    padding: 10px;
-  }
-
-  #p43 {
-    width: 100%;
-    float: left;
-    margin: 20px;
-    padding: 10px;
-  }
-
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 
-  
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-
-/********** Small devices only **********
+/********** Small devices only **********/
 @media (max-width: 767px)
 
- h1 {
-  text-align: center;
-  width: 50%;
- }
-
- #p41 {
-    width: 80%;
-    margin: 20px;
-    padding: 10px;
-  }
-
-  #p42 {
-    width: 80%;
-    float: left;
-    margin: 20px;
-    padding: 10px;
-  }
-
-  #p43 {
-    width: 80%;
-    float: left;
-    margin: 20px;
-    padding: 10px;
-  }
-  
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 
-
-  .col-sm-1 {
-    width: 25%;
-  }
-  .col-sm-2 {
-    width: 16.66%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-5 {
-    width: 41.66%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-7 {
-    width: 58.33%;
-  }
-  .col-sm-8 {
-    width: 66.66%;
-  }
-  .col-sm-9 {
-    width: 74.99%;
-  }
-  .col-sm-10 {
-    width: 83.33%;
-  }
-  .col-sm-11 {
-    width: 91.66%;
-  }
-  .col-sm-12 {
-    width: 100%;
-  } */
+{}
 
 </style>
 </head>
 <body>
-<h1>Our Menu</h1>
-<div class="row">
-  <section class="col-lg-4 col-md-6 col-sm-12">
-    <p id="p41"><br><br>ALorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p class="p1">Chicken</p>
-  </section>
-
-  <section class="col-lg-4 col-md-6 col-sm-12" >
-    <p id="p42"><br><br>BLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p class="p2">Beef</p>
-  </section>
-
-  <section class="col-lg-4 col-md-12 col-sm-12">
-    <p id="p43"><br><br>CLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p class="p3">Sushi</p>
-  </section>
-</div>  
-
+<h1 id="maintitle">Our Menu</h1>
+<div>
+  <div>
+	  <p id="textbox1"><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  <p id="chickenbox">Chicken</p>
+  </div>
+  <div>
+	  <p id="textbox2"><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  <p id="beefbox">Beef</p>
+  </div>
+  <div>
+	  <p id="textbox3"><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  <p id="sushibox">Sushi</p>
+  </div>
+</div>
 </body>
 </html>
-
