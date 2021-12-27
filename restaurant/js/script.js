@@ -1,1 +1,1 @@
-placeholder for js script
+<!-- placeholder text -->
