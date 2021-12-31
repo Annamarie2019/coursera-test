@@ -62,6 +62,10 @@ button .navbar-toggle {
 .navbar-header button.navbar-toggle {
   clear: both;
 }
+
+#collapsable-nav {
+  float: left;
+{
 /* END HEADER */
 
 /* HOME PAGE */
