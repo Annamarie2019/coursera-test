@@ -41,6 +41,10 @@ button .navbar-toggle {
   text-decoration: none;
 }
 
+#collapsable-nav {
+  float: left;
+{
+
 #nav-list {
   margin-top: 10px;
 }
@@ -63,9 +67,6 @@ button .navbar-toggle {
   clear: both;
 }
 
-#collapsable-nav {
-  float: left;
-{
 /* END HEADER */
 
 /* HOME PAGE */
