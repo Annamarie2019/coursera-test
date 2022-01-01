@@ -41,8 +41,9 @@ button .navbar-toggle {
   text-decoration: none;
 }
 
-#collapsable-nav {
-  float: left;
+.float-left {
+    text-align: center;
+    color: #61122f;
 {
 
 #nav-list {
