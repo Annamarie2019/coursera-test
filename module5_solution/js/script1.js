@@ -118,20 +118,10 @@ function buildAndShowHomeHTML (categories) {
       //
       // var homeHtmlToInsertIntoMainPage = ....
       
-   $dc.loadMenuCatgories = function (){
-     showLoading ("#main-content");
-     $ajaxUtils.sendGetRequest(
-       allCategoriesUrl,
-       buildAndShowHTML);
-   };
-    
-    var homeHtmlToInsertIntoMainPage = function (string, propName, propValue) {
-  var propToReplace = "{{" + propName + "}}";
-  string = string
-    .replace(new RegExp(propToReplace, "g"), propValue);
-  return string;
-  insertHtml("#main-content", categoriesViewHTML);    
-};
+      chosenCategoryShortName = "'" + chosenCategoryShortName + "'";
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName);
+      insertHtml('#main-content', homeHtmlToInsertIntoMainPage);
+     
 
 
       // TODO: STEP 4: Insert the produced HTML in STEP 3 into the main page
