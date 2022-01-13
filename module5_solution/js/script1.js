@@ -117,13 +117,20 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
       // var homeHtmlToInsertIntoMainPage = ....
+      
+   $dc.loadMenuCatgories = function (){
+     showLoading ("#main-content");
+     $ajaxUtils.sendGetRequest(
+       allCategoriesUrl,
+       buildAndShowHTML);
+   };
     
     var homeHtmlToInsertIntoMainPage = function (string, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
   string = string
     .replace(new RegExp(propToReplace, "g"), propValue);
   return string;
-  insertHtml("#main-content", chooseRandomCategory);    
+  insertHtml("#main-content", categoriesViewHTML);    
 };
 
 
