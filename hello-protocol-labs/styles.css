@@ -9,14 +9,14 @@
         color: #800000;
 }
 
-.menu-item {
+.intro {
 	position: relative;
 	float: left;
 	width: 32%;
 	margin-right: 2%;
 }
 
-.menu-item:last-child {
+.intro:last-child {
 	margin-right: 0;
 }
 
@@ -44,15 +44,15 @@ h2 {
 	color: #800000;
 }
 
-#chickenmenu {
+#annamarie {
 	background-color: #F7D5B6;
 }
 
-#beefmenu {
+#frida {
 	background-color: #F8D8D6;
 }
 
-#sushimenu {
+#nowoclock {
 	background-color: #D0F5C1;
 }
 
@@ -60,16 +60,16 @@ h2 {
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px)
 {
-	.menu-item {
+	.intro {
 		width: 48.7%;
 		margin-right: 0;
 	}
 
-	.menu-item:nth-child(1) {
+	.intro:nth-child(1) {
 		margin-right: 2.5%;
 	}
 
-	.menu-item:nth-child(3) {
+	.intro:nth-child(3) {
 		clear: both;
 		width: 100%;
 		margin-top: 2.5%;
@@ -79,13 +79,13 @@ h2 {
 /********** Small devices only **********/
 @media (max-width: 767px)
 {
-	.menu-item {
+	.intro {
 		width: 100%;
 		margin-right: 5%;
 		clear: both;
 		margin-bottom: 3%;
 	}
-		.menu-item:last-child {
+		.intro:last-child {
 		margin-bottom: 0;
 	}
 }
