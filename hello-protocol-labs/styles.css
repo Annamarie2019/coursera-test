@@ -9,14 +9,14 @@
         color: #800000;
 }
 
-.intro {
+.menu-item {
 	position: relative;
 	float: left;
 	width: 32%;
 	margin-right: 2%;
 }
 
-.intro:last-child {
+.menu-item:last-child {
 	margin-right: 0;
 }
 
@@ -35,7 +35,7 @@ h2 {
         color: DarkCyan;
 }
 
-.images {
+.textbox {
 	background-color: #CBFAF8;
 	border: 1px solid black;
 	padding: 2.5em 1em 1em;
@@ -44,15 +44,15 @@ h2 {
 	color: #800000;
 }
 
-#annamarie {
+#beefmenu {
 	background-color: #F7D5B6;
 }
 
-#frida {
+#chickenmenu {
 	background-color: #F8D8D6;
 }
 
-#nowoclock {
+#sushimenu {
 	background-color: #D0F5C1;
 }
 
@@ -60,16 +60,16 @@ h2 {
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px)
 {
-	.intro {
+	.menu-item {
 		width: 48.7%;
 		margin-right: 0;
 	}
 
-	.intro:nth-child(1) {
+	.menu-item:nth-child(1) {
 		margin-right: 2.5%;
 	}
 
-	.intro:nth-child(3) {
+	.menu-item:nth-child(3) {
 		clear: both;
 		width: 100%;
 		margin-top: 2.5%;
@@ -79,13 +79,13 @@ h2 {
 /********** Small devices only **********/
 @media (max-width: 767px)
 {
-	.intro {
+	.menu-item {
 		width: 100%;
 		margin-right: 5%;
 		clear: both;
 		margin-bottom: 3%;
 	}
-		.intro:last-child {
+		.menu-item:last-child {
 		margin-bottom: 0;
 	}
 }
